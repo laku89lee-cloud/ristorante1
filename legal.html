@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Privacy Policy, Cookie Policy e Termini e Condizioni del Ristorante Premium"
+    >
+
+    <title>Informative Legali | Ristorante Premium</title>
+
+    <!-- Foglio di stile principale del sito -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font del sito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Stili dedicati alla pagina legale -->
+    <style>
+        .legal-hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 360px;
+            padding: 10rem 0 4rem;
+            background:
+                linear-gradient(rgba(12, 12, 12, 0.82), rgba(12, 12, 12, 0.88)),
+                url("assets/images/page-hero-bg.jpg") center / cover;
+        }
+
+        .legal-hero-content {
+            max-width: 780px;
+        }
+
+        .legal-hero h1 {
+            margin-bottom: 1rem;
+            color: #ffffff;
+            font-size: clamp(2.3rem, 5vw, 4rem);
+        }
+
+        .legal-hero p {
+            color: #c9a962;
+            font-size: 1.1rem;
+            letter-spacing: 0.04em;
+        }
+
+        .legal-layout {
+            display: grid;
+            grid-template-columns: 270px minmax(0, 1fr);
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .legal-sidebar {
+            position: sticky;
+            top: 115px;
+            padding: 1.5rem;
+            background: #f8f8f8;
+            border: 1px solid #ececec;
+            border-radius: 12px;
+        }
+
+        .legal-sidebar-title {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .legal-sidebar a {
+            display: block;
+            padding: 0.75rem 0;
+            color: #555555;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border-bottom: 1px solid #e5e5e5;
+            transition: color 0.25s ease, padding-left 0.25s ease;
+        }
+
+        .legal-sidebar a:last-child {
+            border-bottom: 0;
+        }
+
+        .legal-sidebar a:hover {
+            padding-left: 0.4rem;
+            color: #c9a962;
+        }
+
+        .legal-content {
+            min-width: 0;
+        }
+
+        .legal-section {
+            scroll-margin-top: 125px;
+            margin-bottom: 2.5rem;
+            padding: clamp(1.5rem, 4vw, 3rem);
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        }
+
+        .legal-section h2 {
+            margin-bottom: 0.75rem;
+            font-size: clamp(1.8rem, 3vw, 2.4rem);
+        }
+
+        .legal-section h2::after {
+            content: "";
+            display: block;
+            width: 58px;
+            height: 3px;
+            margin-top: 0.9rem;
+            background: #c9a962;
+        }
+
+        .legal-section h3 {
+            margin: 2rem 0 0.7rem;
+            font-size: 1.3rem;
+        }
+
+        .legal-section p,
+        .legal-section li {
+            color: #5f5f5f;
+            line-height: 1.8;
+        }
+
+        .legal-section p {
+            margin-bottom: 1rem;
+        }
+
+        .legal-section ul {
+            margin: 0 0 1rem 1.2rem;
+            list-style: disc;
+        }
+
+        .legal-section li {
+            margin-bottom: 0.55rem;
+        }
+
+        .legal-update {
+            margin-bottom: 1.75rem;
+            padding: 0.9rem 1rem;
+            background: #fbf7ec;
+            color: #66511e;
+            border-left: 4px solid #c9a962;
+            border-radius: 4px;
+            font-size: 0.92rem;
+        }
+
+        .legal-note {
+            padding: 1rem;
+            margin-top: 1.5rem;
+            background: #f8f8f8;
+            border-radius: 6px;
+            color: #666666;
+            font-size: 0.92rem;
+        }
+
+        .legal-back-top {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1rem;
+            color: #9a7b35;
+            font-weight: 700;
+        }
+
+        .legal-back-top:hover {
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 850px) {
+            .legal-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .legal-sidebar {
+                position: static;
+            }
+
+            .legal-sidebar nav {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.7rem;
+            }
+
+            .legal-sidebar a {
+                padding: 0.75rem;
+                text-align: center;
+                border: 1px solid #e5e5e5;
+                border-radius: 5px;
+            }
+
+            .legal-sidebar a:hover {
+                padding-left: 0.75rem;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .legal-sidebar nav {
+                grid-template-columns: 1fr;
+            }
+
+            .legal-hero {
+                min-height: 300px;
+                padding-top: 8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" aria-label="Torna alla home">
+                <span class="logo-text">RISTORANTE</span>
+                <span class="logo-accent">PREMIUM</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="prenotazioni.html" class="nav-link">Prenotazioni</a></li>
+                <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger" aria-label="Apri menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="legal-hero">
+        <div class="container">
+            <div class="legal-hero-content">
+                <h1>Informative legali</h1>
+                <p>Privacy Policy, Cookie Policy e Termini e Condizioni</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="legal-layout">
+
+                <!-- Indice laterale -->
+                <aside class="legal-sidebar">
+                    <h2 class="legal-sidebar-title">In questa pagina</h2>
+
+                    <nav aria-label="Indice informative legali">
+                        <a href="#privacy-policy">Privacy Policy</a>
+                        <a href="#cookie-policy">Cookie Policy</a>
+                        <a href="#termini-condizioni">Termini e Condizioni</a>
+                    </nav>
+                </aside>
+
+                <div class="legal-content">
+
+                    <!-- PRIVACY POLICY -->
+                    <section class="legal-section" id="privacy-policy">
+                        <h2>Privacy Policy</h2>
+
+                        <p class="legal-update">
+                            Ultimo aggiornamento: [GG/MM/AAAA]
+                        </p>
+
+                        <p>
+                            La presente informativa descrive le modalità con cui
+                            <strong>[NOME DEL RISTORANTE / RAGIONE SOCIALE]</strong>
+                            tratta i dati personali degli utenti che visitano il sito web
+                            <strong>[www.tuodominio.it]</strong> e utilizzano i servizi messi
+                            a disposizione, incluse le richieste di prenotazione e di contatto.
+                        </p>
+
+                        <h3>1. Titolare del trattamento</h3>
+
+                        <p>
+                            Il titolare del trattamento dei dati personali è:
+                        </p>
+
+                        <ul>
+                            <li><strong>Ragione sociale:</strong> [NOME RISTORANTE / SOCIETÀ]</li>
+                            <li><strong>Sede:</strong> [INDIRIZZO COMPLETO]</li>
+                            <li><strong>Partita IVA / Codice Fiscale:</strong> [P.IVA / C.F.]</li>
+                            <li><strong>Email:</strong> [EMAIL PRIVACY O EMAIL DEL RISTORANTE]</li>
+                            <li><strong>Telefono:</strong> [NUMERO DI TELEFONO]</li>
+                        </ul>
+
+                        <h3>2. Dati personali raccolti</h3>
+
+                        <p>
+                            Attraverso il sito possiamo raccogliere le seguenti categorie di dati:
+                        </p>
+
+                        <ul>
+                            <li>
+                                Dati identificativi e di contatto, quali nome, cognome,
+                                indirizzo email e numero di telefono
+                            </li>
+                            <li>
+                                Dati relativi alla prenotazione, quali data, orario,
+                                numero di ospiti, occasione e richieste speciali
+                            </li>
+                            <li>
+                                Informazioni eventualmente indicate dall’utente nel campo
+                                “richieste speciali” o nel modulo di contatto
+                            </li>
+                            <li>
+                                Dati tecnici di navigazione e informazioni relative a cookie
+                                o strumenti analoghi, come descritto nella Cookie Policy
+                            </li>
+                        </ul>
+
+                        <h3>3. Finalità e base giuridica</h3>
+
+                        <p>I dati personali possono essere trattati per le seguenti finalità:</p>
+
+                        <ul>
+                            <li>
+                                Gestire richieste di prenotazione, modifiche, annullamenti
+                                e comunicazioni relative al tavolo richiesto
+                            </li>
+                            <li>
+                                Rispondere a messaggi, richieste di informazioni o contatti
+                                inviati tramite il sito
+                            </li>
+                            <li>
+                                Adempiere a obblighi legali, fiscali, amministrativi o di sicurezza
+                            </li>
+                            <li>
+                                Tutelare i diritti del titolare in sede giudiziale o stragiudiziale
+                            </li>
+                            <li>
+                                Inviare comunicazioni promozionali solo se l’utente ha espresso
+                                uno specifico consenso, quando richiesto
+                            </li>
+                        </ul>
+
+                        <p>
+                            La base giuridica del trattamento può essere l’esecuzione di misure
+                            precontrattuali richieste dall’utente, l’esecuzione di un contratto,
+                            l’adempimento di obblighi di legge, il legittimo interesse del titolare
+                            oppure il consenso dell’utente, a seconda della specifica finalità.
+                        </p>
+
+                        <h3>4. Conferimento dei dati</h3>
+
+                        <p>
+                            Il conferimento dei dati necessari per inviare una richiesta di
+                            prenotazione o di contatto è facoltativo, ma il mancato inserimento
+                            dei campi obbligatori può impedire al ristorante di gestire la richiesta.
+                        </p>
+
+                        <h3>5. Modalità del trattamento</h3>
+
+                        <p>
+                            I dati sono trattati con strumenti cartacei e digitali, adottando
+                            misure tecniche e organizzative ragionevoli per proteggerli da accessi
+                            non autorizzati, perdita, alterazione o divulgazione indebita.
+                        </p>
+
+                        <h3>6. Destinatari dei dati</h3>
+
+                        <p>
+                            I dati possono essere trattati da personale autorizzato del ristorante
+                            e, quando necessario, da fornitori che operano per conto del titolare,
+                            ad esempio fornitori di hosting, manutenzione del sito, servizi email,
+                            gestionali per prenotazioni o consulenti professionali.
+                        </p>
+
+                        <p>
+                            Tali soggetti tratteranno i dati esclusivamente nei limiti necessari
+                            per fornire il servizio richiesto e secondo le istruzioni del titolare,
+                            ove applicabile.
+                        </p>
+
+                        <h3>7. Trasferimenti extra SEE</h3>
+
+                        <p>
+                            Alcuni fornitori tecnici o servizi di terze parti utilizzati dal sito
+                            potrebbero trattare dati al di fuori dello Spazio Economico Europeo.
+                            In tali casi, il titolare adotta o verifica l’adozione delle garanzie
+                            previste dalla normativa applicabile.
+                        </p>
+
+                        <h3>8. Conservazione dei dati</h3>
+
+                        <p>
+                            I dati raccolti per prenotazioni e richieste di contatto sono conservati
+                            per il tempo necessario a gestire la richiesta e, successivamente, per
+                            il periodo richiesto da obblighi di legge o necessario alla tutela dei
+                            diritti del titolare. I dati trattati per finalità di marketing vengono
+                            conservati fino alla revoca del consenso o per il diverso periodo
+                            comunicato al momento della raccolta.
+                        </p>
+
+                        <h3>9. Diritti dell’interessato</h3>
+
+                        <p>
+                            Nei casi previsti dalla normativa applicabile, l’utente può chiedere
+                            l’accesso ai propri dati, la rettifica, la cancellazione, la limitazione
+                            del trattamento, la portabilità dei dati, opporsi al trattamento oppure
+                            revocare il consenso precedentemente prestato.
+                        </p>
+
+                        <p>
+                            Per esercitare tali diritti è possibile contattare il titolare
+                            all’indirizzo: <strong>[EMAIL PRIVACY]</strong>.
+                        </p>
+
+                        <p>
+                            L’utente può inoltre presentare un reclamo all’autorità di controllo
+                            competente, incluso il Garante per la protezione dei dati personali,
+                            qualora ritenga che il trattamento violi la normativa applicabile.
+                        </p>
+
+                        <h3>10. Aggiornamenti dell’informativa</h3>
+
+                        <p>
+                            Il titolare può aggiornare questa Privacy Policy nel tempo. La versione
+                            più recente sarà sempre disponibile in questa pagina, con indicazione
+                            della data di ultimo aggiornamento.
+                        </p>
+
+                        <a class="legal-back-top" href="#top">↑ Torna all’inizio</a>
+                    </section>
+
+                    <!-- COOKIE POLICY -->
+                    <section class="legal-section" id="cookie-policy">
+                        <h2>Cookie Policy</h2>
+
+                        <p class="legal-update">
+                            Ultimo aggiornamento: [GG/MM/AAAA]
+                        </p>
+
+                        <p>
+                            Questa Cookie Policy spiega cosa sono i cookie e gli strumenti analoghi,
+                            quali categorie possono essere utilizzate sul sito
+                            <strong>[www.tuodominio.it]</strong> e come l’utente può gestire le
+                            proprie preferenze.
+                        </p>
+
+                        <h3>1. Cosa sono i cookie</h3>
+
+                        <p>
+                            I cookie sono piccoli file di testo che un sito può salvare sul
+                            dispositivo dell’utente durante la navigazione. Possono servire al
+                            corretto funzionamento del sito, alla memorizzazione delle preferenze,
+                            all’analisi dell’utilizzo o alla personalizzazione di contenuti e annunci.
+                        </p>
+
+                        <h3>2. Cookie tecnici e strettamente necessari</h3>
+
+                        <p>
+                            Il sito può utilizzare cookie tecnici o strumenti strettamente necessari
+                            per consentire la navigazione, gestire preferenze essenziali, garantire
+                            la sicurezza del sito o ricordare la scelta espressa nel banner cookie.
+                        </p>
+
+                        <p>
+                            Questi strumenti non richiedono normalmente il consenso preventivo,
+                            poiché sono necessari per offrire il servizio richiesto dall’utente.
+                        </p>
+
+                        <h3>3. Cookie analitici, di profilazione e di terze parti</h3>
+
+                        <p>
+                            Cookie analitici non anonimizzati, cookie di profilazione, pixel
+                            pubblicitari, strumenti social e altri strumenti di tracciamento non
+                            strettamente necessari vengono attivati solo dopo il consenso
+                            dell’utente, quando previsto dalla normativa applicabile.
+                        </p>
+
+                        <p>
+                            Il consenso può essere prestato, rifiutato o modificato tramite il banner
+                            cookie o l’area di gestione preferenze del sito.
+                        </p>
+
+                        <h3>4. Servizi di terze parti</h3>
+
+                        <p>
+                            Il sito può integrare contenuti o servizi forniti da soggetti terzi.
+                            Ad esempio, la mappa incorporata tramite Google Maps può comportare
+                            l’interazione con servizi di Google e l’eventuale trattamento di dati
+                            tecnici o di navigazione da parte del relativo fornitore.
+                        </p>
+
+                        <p>
+                            Inserisci qui esclusivamente i servizi realmente presenti nel sito:
+                        </p>
+
+                        <ul>
+                            <li><strong>Google Maps:</strong> visualizzazione della posizione del ristorante</li>
+                            <li><strong>[Google Analytics / Matomo / altro]:</strong> [specificare se realmente installato]</li>
+                            <li><strong>[Meta Pixel / Google Ads / altro]:</strong> [specificare se realmente installato]</li>
+                            <li><strong>[Instagram / Facebook / TikTok / altro]:</strong> [specificare se sono presenti plugin o embed]</li>
+                        </ul>
+
+                        <h3>5. Gestione o revoca del consenso</h3>
+
+                        <p>
+                            L’utente può modificare o revocare in qualsiasi momento le preferenze
+                            sui cookie non necessari tramite il pulsante o link
+                            <strong>“Gestisci preferenze cookie”</strong> presente nel sito.
+                        </p>
+
+                        <p>
+                            In alternativa, l’utente può configurare il proprio browser per bloccare
+                            o eliminare i cookie. La disabilitazione dei cookie tecnici può tuttavia
+                            compromettere alcune funzionalità del sito.
+                        </p>
+
+                        <h3>6. Durata dei cookie</h3>
+
+                        <p>
+                            I cookie possono essere di sessione, cioè eliminati alla chiusura del
+                            browser, oppure persistenti, cioè conservati per un periodo definito.
+                            Le durate effettive dipendono dai cookie e dai servizi realmente usati.
+                        </p>
+
+                        <h3>7. Come aggiornare questa sezione</h3>
+
+                        <p>
+                            Prima della pubblicazione, elenca in questa pagina tutte le tecnologie
+                            effettivamente presenti nel sito, indicando per ciascuna: fornitore,
+                            finalità, categoria, durata e modalità per revocare il consenso.
+                        </p>
+
+                        <div class="legal-note">
+                            <strong>Importante:</strong> se il sito utilizza Google Analytics,
+                            Meta Pixel, annunci, video incorporati, mappe o altri servizi di terze
+                            parti, verifica con un professionista o una Consent Management Platform
+                            che tali strumenti non vengano caricati prima del consenso, quando
+                            necessario.
+                        </div>
+
+                        <a class="legal-back-top" href="#top">↑ Torna all’inizio</a>
+                    </section>
+
+                    <!-- TERMINI E CONDIZIONI -->
+                    <section class="legal-section" id="termini-condizioni">
+                        <h2>Termini e Condizioni</h2>
+
+                        <p class="legal-update">
+                            Ultimo aggiornamento: [GG/MM/AAAA]
+                        </p>
+
+                        <p>
+                            I presenti Termini e Condizioni regolano l’utilizzo del sito
+                            <strong>[www.tuodominio.it]</strong>, gestito da
+                            <strong>[NOME DEL RISTORANTE / RAGIONE SOCIALE]</strong>.
+                            Accedendo al sito, l’utente accetta i termini descritti in questa pagina.
+                        </p>
+
+                        <h3>1. Finalità del sito</h3>
+
+                        <p>
+                            Il sito fornisce informazioni sul ristorante, incluse a titolo
+                            esemplificativo menu, proposte gastronomiche, immagini, orari, recapiti,
+                            posizione e modalità per richiedere una prenotazione o informazioni.
+                        </p>
+
+                        <h3>2. Accuratezza delle informazioni</h3>
+
+                        <p>
+                            Il ristorante si impegna a mantenere aggiornate le informazioni
+                            pubblicate, ma non garantisce che menu, prezzi, disponibilità dei piatti,
+                            immagini, orari, eventi o altri contenuti siano sempre completi,
+                            aggiornati o privi di errori.
+                        </p>
+
+                        <p>
+                            Menu, prezzi, ingredienti, allergeni e disponibilità possono variare
+                            senza preavviso. Per esigenze alimentari, allergie o intolleranze,
+                            l’utente è invitato a contattare direttamente il personale del ristorante
+                            prima della prenotazione e del consumo.
+                        </p>
+
+                        <h3>3. Richieste di prenotazione</h3>
+
+                        <p>
+                            L’invio del modulo di prenotazione costituisce una richiesta e non
+                            garantisce automaticamente la disponibilità del tavolo. La prenotazione
+                            si considera confermata solo dopo una comunicazione espressa del
+                            ristorante tramite email, telefono o altro canale indicato.
+                        </p>
+
+                        <p>
+                            Il ristorante può contattare l’utente per richiedere ulteriori
+                            informazioni, confermare la disponibilità, proporre orari alternativi
+                            oppure comunicare l’impossibilità di accettare la richiesta.
+                        </p>
+
+                        <h3>4. Modifiche, ritardi e cancellazioni</h3>
+
+                        <p>
+                            Eventuali modifiche o cancellazioni devono essere comunicate con
+                            adeguato anticipo ai recapiti del ristorante.
+                        </p>
+
+                        <p>
+                            Se il ristorante applica una politica di cancellazione, no-show,
+                            caparra o addebito, inserisci qui i termini precisi e rendili visibili
+                            prima della conferma della prenotazione:
+                        </p>
+
+                        <ul>
+                            <li><strong>Termine di cancellazione:</strong> [es. fino a 24 ore prima]</li>
+                            <li><strong>Eventuale penale/no-show:</strong> [specificare importo o percentuale]</li>
+                            <li><strong>Metodo di pagamento/garanzia:</strong> [specificare, se previsto]</li>
+                        </ul>
+
+                        <h3>5. Proprietà intellettuale</h3>
+
+                        <p>
+                            Testi, fotografie, loghi, elementi grafici, layout, video e altri
+                            contenuti del sito sono protetti dalle norme applicabili in materia di
+                            proprietà intellettuale e appartengono al ristorante o ai rispettivi
+                            titolari dei diritti.
+                        </p>
+
+                        <p>
+                            Non è consentito copiare, riprodurre, modificare, distribuire o
+                            utilizzare tali contenuti per finalità commerciali senza autorizzazione
+                            scritta del titolare dei diritti.
+                        </p>
+
+                        <h3>6. Link a siti di terze parti</h3>
+
+                        <p>
+                            Il sito può contenere collegamenti a siti o servizi di terze parti,
+                            come social network, mappe o piattaforme di prenotazione. Il ristorante
+                            non controlla tali siti e non è responsabile dei relativi contenuti,
+                            politiche o modalità di trattamento dei dati personali.
+                        </p>
+
+                        <h3>7. Limitazione di responsabilità</h3>
+
+                        <p>
+                            Nei limiti consentiti dalla legge, il ristorante non risponde di danni
+                            diretti o indiretti derivanti dall’uso o dall’impossibilità di utilizzare
+                            il sito, da interruzioni tecniche, errori, virus, indisponibilità dei
+                            servizi o informazioni pubblicate da soggetti terzi.
+                        </p>
+
+                        <h3>8. Modifiche ai termini</h3>
+
+                        <p>
+                            Il ristorante può modificare i presenti Termini e Condizioni in qualsiasi
+                            momento. Le modifiche diventano efficaci dalla loro pubblicazione in
+                            questa pagina, salvo ove diversamente previsto dalla legge.
+                        </p>
+
+                        <h3>9. Legge applicabile e foro competente</h3>
+
+                        <p>
+                            I presenti Termini e Condizioni sono disciplinati dalla legge italiana.
+                            Per le controversie con utenti consumatori resta fermo il foro competente
+                            previsto dalla normativa applicabile. Per le altre controversie, salvo
+                            norme inderogabili, sarà competente il Foro di
+                            <strong>[CITTÀ]</strong>.
+                        </p>
+
+                        <h3>10. Contatti</h3>
+
+                        <p>
+                            Per informazioni relative a questi Termini e Condizioni è possibile
+                            contattare il ristorante:
+                        </p>
+
+                        <ul>
+                            <li><strong>Email:</strong> [EMAIL DEL RISTORANTE]</li>
+                            <li><strong>Telefono:</strong> [NUMERO DI TELEFONO]</li>
+                            <li><strong>Indirizzo:</strong> [INDIRIZZO COMPLETO]</li>
+                        </ul>
+
+                        <a class="legal-back-top" href="#top">↑ Torna all’inizio</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-text">RISTORANTE</span>
+                        <span class="logo-accent">PREMIUM</span>
+                    </a>
+
+                    <p class="footer-description">
+                        Cucina italiana d'eccellenza. Un'esperienza gastronomica
+                        unica nel cuore della città.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Link Rapidi</h4>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="prenotazioni.html">Prenotazioni</a></li>
+                        <li><a href="contatti.html">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contatti</h4>
+                    <ul class="footer-list">
+                        <li>Via Roma 123, 00100 Roma RM</li>
+                        <li><a href="tel:+390612345678">+39 06 12345678</a></li>
+                        <li>
+                            <a href="mailto:info@ristorantepremium.it">
+                                info@ristorantepremium.it
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-hours">
+                    <h4 class="footer-title">Orari</h4>
+                    <ul class="footer-list">
+                        <li><strong>Lun - Gio:</strong> 19:00 - 23:00</li>
+                        <li><strong>Ven - Sab:</strong> 19:00 - 00:00</li>
+                        <li><strong>Domenica:</strong> 12:00 - 15:00, 19:00 - 23:00</li>
+                        <li><strong>Martedì:</strong> Chiuso</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ristorante Premium. Tutti i diritti riservati.</p>
+
+                <div class="footer-legal">
+                    <a href="legal.html#privacy-policy">Privacy Policy</a>
+                    <a href="legal.html#cookie-policy">Cookie Policy</a>
+                    <a href="legal.html#termini-condizioni">Termini e Condizioni</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
