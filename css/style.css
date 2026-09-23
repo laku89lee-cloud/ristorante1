@@ -391,9 +391,9 @@ h4 { font-size: 1.25rem; }
 
 .page-subtitle {
     font-size: 1.25rem;
-    color: var(--color-secondary);
+    color: var(--color-white);
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
